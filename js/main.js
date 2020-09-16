@@ -163,3 +163,51 @@ let app17 = new Vue({
 		],
 	},
 });
+
+
+
+let app18 = new Vue({
+	el: '#app18',
+	data: {
+		// Элемент массива = массив
+		hrefs: [
+	{href: '1.html', text: 'ссылка 1'},
+	{href: '2.html', text: 'ссылка 2'},
+	{href: '3.html', text: 'ссылка 3'},
+]
+	},
+});
+
+
+let app19 = new Vue({
+	el: '#app19',
+	data: {
+		
+products: [
+	{name: 'product1', price: 100, quantity: 5},
+	{name: 'product2', price: 200, quantity: 4},
+	{name: 'product3', price: 300, quantity: 3},
+]
+
+
+	},
+});
+
+// Директива v-for и тег template
+
+let app20 = new Vue({
+	el: '#app20',
+	data: {
+		items: ['a', 'b', 'c', 'd', 'e'],
+	},
+});
+
+//  Решение задачи 10
+
+
+let app21 = new Vue({
+	el: '#app21',
+	data: {
+		items: ['a', 'b', 'c', 'd', 'e','a1', 'b1', 'c1', 'd1', 'e1'],
+	},
+});

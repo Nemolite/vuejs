@@ -150,6 +150,66 @@
 	</ul>
 </div>
 
+<!-- Решение задачи 8  -->
+
+<div id="app18">
+	<ul>
+		<li v-for="item in hrefs">
+		<a href="{{ item.href }}">
+		{{ item.text }}
+	    </a>
+			 
+		</li>
+	</ul>
+</div>
+
+
+<!-- Решение задачи 9  -->
+
+<div id="app19">
+	<ul>
+		<li v-for="one in products">
+{{ one.name }}, цена 
+{{ one.price}}, 
+количество {{ one.quantity}}, 
+сумма {{ one.price * one.quantity}}
+					 
+		</li>
+	</ul>
+</div>
+
+<!-- Директива v-for и тег template -->
+
+<div id="app20">
+	<ul>
+		<template v-for="item in items">
+			<li>{{ item }}</li>
+			<li class="divider"></li>
+		</template>
+	</ul>
+</div>
+
+<!-- Решение задачи 10  -->
+
+<div id="app21">
+	<ul>
+		<template v-for="item in items">
+			<li class="divider1"></li>
+			<li class="divider2">{{ item }}</li>
+			<li class="divider3"></li>
+		</template>
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
