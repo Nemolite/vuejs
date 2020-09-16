@@ -215,10 +215,57 @@
 		{{ show2() }}
 </div>
 
+<div id="amper3">
+	<button v-on:click="show">Нажми на меня</button>
+</div>
+
+<!-- Дана кнопка. В data дано свойство text, в котором хранится текст 'hello'. Сделайте так, чтобы по нажатию на кнопку алертом вывелся текст из свойства text. -->
+
+<div id="possibility">
+	<button v-on:click="show">
+	Кнопка
+    </button>
+</div>
+
+<div id="possibility1" class="lesty">
+	<div v-on:mouseover="show">
+	Кнопка наведение мыши
+    </div>
+</div>
+
+<div id="possibility2">
+	<button v-on:click="show">
+	При нажатии на конопку
+    </button>
+</div>
 
 
+<!-- Реактивность -->
+
+<div id="pos">
+	{{ message }}
+	<button v-on:click="changeMessage">Поменять сообщение</button>
+</div>
+
+<!-- Дано свойство text, в котором хранится текст '12345'. Выведите содержимое свойства text в каком-нибудь абзаце. Дана также кнопка. Сделайте так, чтобы по нажатию на кнопку текст в нашем абзаце мгновенно поменялся с '12345' на 'abcde'.-->
+
+<div id="pos1">
+	{{ text }}
+	<button v-on:click="changeText">Поменять </button>
+</div>
+
+<!-- Изменения массива на лету -->
 
 
+<div id="most">
+
+	<ul>
+		<li v-for="item in items">
+		{{ item }}
+	   </li>
+	</ul>
+	<button v-on:click="addItem">Добавить</button>
+</div>
 
 
 

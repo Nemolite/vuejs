@@ -251,9 +251,118 @@ data: {
 },
 	methods: {
 		show2: function() {
-			alert(this.num1+this.num2); // выведет 'hello'
+			console.log(this.num1+this.num2); // выведет 'hello'
 		}
 	}
 });
 
 
+let amper3 = new Vue({
+	el: '#amper3',
+	data: {
+		message: 'hello',
+	},
+	methods: {
+		show: function() {
+			alert(this.message);
+		}
+	}
+});
+
+// Дана кнопка. 
+//В data дано свойство text, 
+//в котором хранится текст 'hello'. 
+//Сделайте так, чтобы по нажатию 
+//на кнопку алертом вывелся 
+//текст из свойства text.
+
+
+let possibility = new Vue({
+	el: '#possibility',
+	data: {
+		text: 'hello',
+	},
+	methods: {
+		show: function() {
+			alert(this.text);
+		}
+	}
+});
+
+let possibility1 = new Vue({
+	el: '#possibility1',
+	data: {
+		text: 'Наведение мыши',
+	},
+	methods: {
+		show: function() {
+			alert(this.text);
+		}
+	}
+});
+
+
+
+let possibility2 = new Vue({
+	el: '#possibility2',
+	data: {
+		num1: 1,
+		num2: 2,
+		num3: 3,
+    },
+	methods: {
+		show: function() {
+			alert(this.num1+this.num2+this.num3);
+		}
+	}
+});
+
+// Реактивность
+
+let pos = new Vue({
+	el: '#pos',
+	data: {
+		message: 'привет',
+	},
+	methods: {
+		changeMessage: function() {
+			this.message = 'пока';
+		}
+	}
+});
+
+// Дано свойство text, 
+//в котором хранится текст 
+//'12345'. Выведите содержимое
+// свойства text в каком-нибудь 
+// абзаце. Дана также кнопка. 
+// Сделайте так, чтобы по нажатию 
+// на кнопку текст в нашем абзаце 
+// мгновенно поменялся 
+// с '12345' на 'abcde'.
+
+let pos1 = new Vue({
+	el: '#pos1',
+	data: {
+		text: '12345',
+	},
+	methods: {
+		changeText: function() {
+			this.text = 'abcde';
+		}
+	}
+});
+
+// Изменения массива на лету
+
+let most = new Vue({
+	el: '#most',
+	data: {
+		items: ['a', 'b', 'c', 'd', 'e'],
+	},
+	methods: {
+	addItem: function() {
+		this.items.push('пункт');
+	}
+},
+});

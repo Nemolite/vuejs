@@ -9,3 +9,12 @@
 .divider3 {
 	background-color: #000;
 }
+
+.lesty {
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	margin-top: 20px;
+	color:#787878;
+	border:1px solid red;
+}
