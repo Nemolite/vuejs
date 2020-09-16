@@ -71,6 +71,87 @@
 </div>
 
 
+<div id="app9">
+	<ul>
+		<li v-for="(item, i) in array">
+	<!-- в item значения, в index ключи (индексы)
+	обрати внимание начало массива 0
+	-->		
+		{{ item }} - {{ i+1 }}
+	    </li>
+	</ul>
+</div>
+
+<div id="app10">
+	<ul>
+		<li v-for="value in users">{{ value }}</li>
+	</ul>
+</div>
+
+
+<div id="app11">
+	<ul>
+		<li v-for="(value, key) in users">
+		{{ key }} - {{ value }}
+	   </li>
+	</ul>
+</div>
+
+
+<div id="app12">
+	<ul>
+		<li v-for="(value, key, index) in users">
+<!-- 1- значение, 2 - ключ, 3 -индекс -->			
+			{{ key }} - {{ value }} - {{ index }}
+		</li>
+	</ul>
+</div>
+
+<div id="app13">
+	<ul>
+		<li v-for="(value) in arr13">
+		 {{ value }}
+	   </li>
+	</ul>
+</div>
+
+<div id="app14">
+	<ul>
+		<li v-for="(value, key) in arr14">
+		 {{ key }} - {{ value }}
+	   </li>
+	</ul>
+</div>
+
+<div id="app15">
+	<ul>
+		<li v-for="(value, key, i) in arr15">
+		 {{ key }} - {{ value }} - {{ i }}
+	   </li>
+	</ul>
+</div>
+
+<div id="app16">
+	<ul>
+		<li v-for="(value, key, i) in arr16">
+		 {{ key }} - {{ value }} - {{ i+1 }}
+	   </li>
+	</ul>
+</div>
+
+<!-- Многомерные массивы и циклы -->
+
+<div id="app17">
+	<ul>
+		<li v-for="user in users">
+	<!-- точеченая нотация-->		
+			{{ user.name }} - {{ user.salary }}
+		</li>
+	</ul>
+</div>
+
+
+
 
 	<script src="js/main.js"></script> 
 </body>
