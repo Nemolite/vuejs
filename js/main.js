@@ -211,3 +211,49 @@ let app21 = new Vue({
 		items: ['a', 'b', 'c', 'd', 'e','a1', 'b1', 'c1', 'd1', 'e1'],
 	},
 });
+
+// Работа с методами и событиями
+
+let amper = new Vue({
+	el: '#amper',
+	data: {
+		message: 'hello',
+	},
+	methods: {
+		show: function() {
+			console.log(111)
+
+
+		}
+	}
+});
+
+
+let amper1= new Vue({
+	el: '#amper1',
+	data: {
+		message: 'hello',
+	},
+	methods: {
+		show1: function() {
+			console.log(this.message); // выведет 'hello'
+		}
+	}
+});
+
+
+let amper2= new Vue({
+	el: '#amper2',
+	
+data: {
+	num1: 1,
+	num2: 2,
+},
+	methods: {
+		show2: function() {
+			alert(this.num1+this.num2); // выведет 'hello'
+		}
+	}
+});
+
+
