@@ -27,6 +27,50 @@
 	    {{ arr[2] }}
 	</div>
 
+	<div id="app4">
+	{{ obj.a }}
+	{{ obj.b }}
+	{{ obj.c }}
+
+	{{ obj['a'] }}
+	{{ obj['b'] }}
+	{{ obj['c'] }}
+</div>
+
+<div id="app5">
+<li v-for="item in items">{{ item }}</li>
+</div>
+
+<div id="app6">
+<ul v-for="item in arr">{{ item }}</ul>
+</div>
+
+<!-- Варианты циклов -->
+
+
+<div id="app7">
+	<ul>
+		<li v-for="(item, index) in items">
+	<!-- в item значения, в index ключи (индексы)
+	обрати внимание начало массива 0
+	-->		
+		{{ item }} - {{ index }}
+	    </li>
+	</ul>
+</div>
+
+<div id="app8">
+	<ul>
+		<li v-for="(item, i) in array">
+	<!-- в item значения, в index ключи (индексы)
+	обрати внимание начало массива 0
+	-->		
+		{{ item }} - {{ i }}
+	    </li>
+	</ul>
+</div>
+
+
 
 	<script src="js/main.js"></script> 
 </body>
