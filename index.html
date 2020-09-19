@@ -279,7 +279,14 @@
 		{{ item }}
 	   </li>
 	</ul>
-	<button v-on:click="addItem">Добавить</button>
+	<button v-on:click="addItem">Реверс</button>
+	<button v-on:click="addItem2">Сортировка</button>
+	<ul>
+		<li v-for="itarr in result">
+		{{ itarr }}
+	   </li>
+	</ul>
+	<button v-on:click="addItem3">Увеличить массив</button>
 </div>
 
 

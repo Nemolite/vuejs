@@ -378,11 +378,22 @@ let most = new Vue({
 let most2 = new Vue({
 	el: '#most2',
 	data: {
-		items: ['a', 'b', 'c', 'd', 'e'],
+		items: ['a', 'c', 'b',  'd', 'e'],
+		arr1: [1, 2],
+        arr2: [3, 4],
+        arr3: [5, 6],
+        result:[],
 	},
 	methods: {
 	addItem: function() {
 		this.items.reverse();
-	}
+	},
+	addItem2: function() {
+		this.items.sort();
+	},
+	addItem3: function() {
+		result = [1, 2].concat([3, 4], [5, 6]);
+		console.log(result);
+	},
 },
 });
