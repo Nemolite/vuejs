@@ -290,6 +290,25 @@
 </div>
 
 
+
+<div id="most3">
+
+	<ul>
+		<li v-for="item in items">
+		{{ item }}
+	   </li>
+	</ul>
+	<button v-on:click="addItem">Добавить</button>
+</div>
+
+
+
+<div id="app217">
+	<p>Имя: {{ name }}, возраст: {{ age }} </p>
+	<button v-on:click="changeUser">Изменить юзера</button>
+</div>
+
+
 	<script src="js/main.js"></script> 
 </body>
 </html>

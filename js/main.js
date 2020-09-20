@@ -397,3 +397,42 @@ let most2 = new Vue({
 	},
 },
 });
+
+
+let most3 = new Vue({
+	el: '#most3',
+	data: {
+		items: ['a', 'b', 'c', 'd', 'e'],
+	},
+	methods: {
+	addItem: function() {
+		items = [1, 2].concat([3, 4], [5, 6]);
+	}
+},
+});
+
+
+let app217 = new Vue({
+	el: '#app217',
+	data: {
+		name: 'Коля',
+		age: 20,
+	},
+	methods: {
+		// Вспомогательный метод:
+		changeName: function() {
+			this.name = 'Вася';
+		},
+		
+		// Вспомогательный метод:
+		changeAge: function() {
+			this.age = 30;
+		},
+		
+		// Этот метод привязан к кнопке:
+		changeUser: function() {
+			this.changeName(); // изменим имя
+			this.changeAge(); // изменим возраст
+		},
+	}
+});
