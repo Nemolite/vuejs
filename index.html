@@ -324,6 +324,14 @@
 	<button v-on:click="calc">Посчитать</button>
 </div>
 
+<div id="app47">
+	<input v-model="newItem">
+	<button v-on:click="addItem">Добавить</button>
+	<ul>
+		<li v-for="item in items">{{ item }}</li>
+	</ul>
+</div>
+
 	<script src="js/main.js"></script> 
 </body>
 </html>

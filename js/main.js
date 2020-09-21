@@ -467,3 +467,16 @@ let app46 = new Vue({
 		}
 	}
 });
+
+let app47 = new Vue({
+	el: '#app47',
+	data: {
+		newItem: '',
+		items: ['a', 'b', 'c', 'd', 'e'],
+	},
+	methods: {
+		addItem: function() {
+			this.items.push(this.newItem);
+		}
+	}
+});
