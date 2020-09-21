@@ -436,3 +436,34 @@ let app217 = new Vue({
 		},
 	}
 });
+
+
+let app44 = new Vue({
+	el: '#app44',
+	methods: {
+		showMessage: function(message) {
+			alert(message);
+		},
+	}
+});
+
+let app45 = new Vue({
+	el: '#app45',
+	data: {
+		message: 'hello',
+	},
+});
+
+
+let app46 = new Vue({
+	el: '#app46',
+	data: {
+		num: null, // изначально числа нет
+		result2: 0,
+	},
+	methods: {
+		calc: function() {
+			this.result2 = this.num * this.num;
+		}
+	}
+});

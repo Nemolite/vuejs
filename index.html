@@ -308,6 +308,21 @@
 	<button v-on:click="changeUser">Изменить юзера</button>
 </div>
 
+<div id="app44">
+	<button v-on:click="showMessage('привет')">Поприветствовать</button>
+	<button v-on:click="showMessage('пока')">Попрощаться</button>
+</div>
+
+<div id="app45">
+	<input v-model="message">
+	<p>Введенное сообщение: {{ message }}</p>
+</div>
+
+<div id="app46">
+	<p>Результат: {{ result2 }}</p>
+	<input v-model="num">
+	<button v-on:click="calc">Посчитать</button>
+</div>
 
 	<script src="js/main.js"></script> 
 </body>
