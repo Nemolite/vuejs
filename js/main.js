@@ -480,3 +480,11 @@ let app47 = new Vue({
 		}
 	}
 });
+
+
+let app48 = new Vue({
+	el: '#app48',
+	data: {
+		str: 'www',
+	},
+});
