@@ -337,6 +337,22 @@
 	<p v-bind:class="str">Абзац</p>
 </div>
 
+<div id="app49">
+	<p>Результат: {{ result }}</p>
+	<input v-model="num">
+	<button v-on:click="calc">Посчитать</button>
+</div>
+
+<div id="app51">
+	<p>Результат: {{ str.toUpperCase() }}</p>
+	<input v-model="str">
+</div>
+
+<div id="app52">
+	<p>Результат: {{ reverseStr(str) }}</p>
+	<input v-model="str">
+</div>
+
 	<script src="js/main.js"></script> 
 </body>
 </html>

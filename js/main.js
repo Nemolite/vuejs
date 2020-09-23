@@ -488,3 +488,35 @@ let app48 = new Vue({
 		str: 'www',
 	},
 });
+
+let app49 = new Vue({
+	el: '#app49',
+	data: {
+		num: null, // изначально числа нет
+		result: 0,
+	},
+	methods: {
+		calc: function() {
+			this.result = this.num * this.num;
+		}
+	}
+});
+
+let app51 = new Vue({
+	el: '#app51',
+	data: {
+		str: '',
+	},
+});
+
+let app52 = new Vue({
+	el: '#app52',
+	data: {
+		str: '',
+	},
+	methods: {
+		reverseStr: function(str) {
+			return str.split('').reverse().join('');
+		}
+	}
+});
