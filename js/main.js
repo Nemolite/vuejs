@@ -520,3 +520,9 @@ let app52 = new Vue({
 		}
 	}
 });
+
+ var app53 = new Vue({
+        el: "#app53",
+        data: {isActive : false}
+    });
+

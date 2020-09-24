@@ -19,3 +19,13 @@
 	border:1px solid red;
 }
 
+.region{
+    background-color: #999;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+}
+.active{
+    background-color:red;
+}
