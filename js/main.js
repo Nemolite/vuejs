@@ -526,3 +526,12 @@ let app52 = new Vue({
         data: {isActive : false}
     });
 
+
+ var app54 = new Vue({
+        el: '#app54',
+        data: {
+            color: 'red',
+            width: 75,
+            height: 75
+        }
+    });
