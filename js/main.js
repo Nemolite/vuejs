@@ -535,3 +535,11 @@ let app52 = new Vue({
             height: 75
         }
     });
+
+let app102 = new Vue({
+	el: '#app102',
+	data: {
+		message1: 'Отзыв',
+		
+	},
+});
